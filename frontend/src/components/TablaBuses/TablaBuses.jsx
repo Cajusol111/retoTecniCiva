@@ -13,7 +13,7 @@ const TablaBuses = () => {
   const [showDetailModal, setShowDetailModal] = useState(false); 
 
 
-  const pageSize = 4;
+  const pageSize = 5;
 
   const fetchBuses = async () => {
     const data = await getBuses(page, pageSize);
