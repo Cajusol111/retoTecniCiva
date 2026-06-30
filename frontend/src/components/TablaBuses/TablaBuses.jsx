@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
+
 import { getBuses, getBusById } from "../../services/BusServices";
 import Modal from "../Modal/Modal";
 import logo from "../../assets/logotipo-light.webp";
 
-import "./tablaBuses.css"; // Asegúrate de importar el archivo de estilos
+import "./tablaBuses.css"; 
 
 const TablaBuses = () => {
   const [buses, setBuses] = useState([]);
   const [page, setPage] = useState(0);
   const [totalPages, setTotalPages] = useState(1);
-  const [selectedBus, setSelectedBus] = useState(null); // Para el bus seleccionado
-  const [showDetailModal, setShowDetailModal] = useState(false); // Para abrir/cerrar el modal
+  const [selectedBus, setSelectedBus] = useState(null); 
+  const [showDetailModal, setShowDetailModal] = useState(false); 
 
   const pageSize = 5;
 
@@ -84,7 +84,7 @@ const TablaBuses = () => {
         </button>
       </div>
 
-
+2222222
       <Modal
         isOpen={showDetailModal}
         onClose={() => setShowDetailModal(false)}
